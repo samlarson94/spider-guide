@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from spidercollection import views
+from django.urls import include, path 
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path(route='', view=views.index, name='home'),
+
 ]
