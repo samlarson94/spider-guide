@@ -1,10 +1,21 @@
 <!doctype html>
 <html>
+    <script>
+        window.onload = function() {
+            console.log("triggered")
+            var x = Math.floor((Math.random() * 900000) + 3)
+            document.getElementById('random-assignment').innerHTML = x;
+        }
+    </script>
     <head>
         <title>You are Now Entering Spider Society</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Hello Earthling #<span id='random-assignment'>...<span></h1>
         <p>Welcome to a new reality..</p>
+        <section>
+            <button id='entrance-btn' onClick="#">Enter Here</button>
     </body>
+
 </html>
